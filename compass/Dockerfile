@@ -17,7 +17,7 @@ RUN go build -o ./out/compass cmd/*.go
 
 # -----------------------------------------------
 
-FROM alpine:3.12.0
+FROM alpine:3
 
 COPY --from=builder /app/compass/dist /plugins
 COPY --from=builder /app/compass/out/compass .
