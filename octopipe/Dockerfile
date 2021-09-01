@@ -15,7 +15,7 @@ RUN go build -o ./out/octopipe cmd/*.go
 
 # -----------------------------------------------
 
-FROM alpine:3.12.0
+FROM alpine:3
 
 COPY --from=builder /app/octopipe/out/octopipe .
 
