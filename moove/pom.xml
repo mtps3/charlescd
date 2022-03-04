@@ -46,7 +46,7 @@
         <mockk.version>1.9.3</mockk.version>
         <gitlab4j-api.version>4.12.1</gitlab4j-api.version>
         <eclipse.egit.github.core.version>2.1.5</eclipse.egit.github.core.version>
-        <feign.jackson.version>9.5.1</feign.jackson.version>
+        <feign.jackson.version>10.12</feign.jackson.version>
         <modelmapper.version>2.3.0</modelmapper.version>
         <keycloak.admin.client.version>7.0.1</keycloak.admin.client.version>
         <cglib.nodep.version>3.3.0</cglib.nodep.version>
@@ -335,8 +335,7 @@
                         <phase>none</phase>
                         <configuration>
                             <target name="ktlint">
-                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true"
-                                      classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
+                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
                                     <arg value="src/**/*.kt"/>
                                 </java>
                             </target>
@@ -347,8 +346,7 @@
                         <phase>none</phase>
                         <configuration>
                             <target name="ktlint">
-                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true"
-                                      classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
+                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
                                     <arg value="-F"/>
                                     <arg value="src/**/*.kt"/>
                                 </java>
