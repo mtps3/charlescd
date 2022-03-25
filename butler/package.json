@@ -17,7 +17,9 @@
     "test:integration": "jest --testRegex \"integration-spec\\.ts$\" --runInBand --forceExit",
     "test:cov": "jest \"\\.spec.ts$\" --coverage",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-    "test:all:cov": "jest --runInBand --coverage --forceExit"
+    "test:all:cov": "jest --runInBand --coverage --forceExit",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@nestjs/common": "^7.6.5",
@@ -34,7 +36,7 @@
     "cls-rtracer": "^1.4.1",
     "consul": "^0.36.0",
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.20",
     "morgan": "^1.10.0",
     "mustache": "^3.2.1",
     "pg": "^7.18.2",
@@ -46,7 +48,8 @@
     "swagger-ui-express": "^4.1.4",
     "typeorm": "^0.2.25",
     "uuid": "8.3.0",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/types": "7.5.5",
@@ -102,5 +105,6 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node",
     "testTimeout": 10000
-  }
+  },
+  "snyk": true
 }
