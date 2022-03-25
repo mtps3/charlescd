@@ -1,0 +1,24 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - http-proxy-middleware > lodash:
+        patched: '2022-03-25T21:37:38.214Z'
+    - styled-components > @babel/traverse > lodash:
+        patched: '2022-03-25T21:37:38.214Z'
+    - styled-components > babel-plugin-styled-components > lodash:
+        patched: '2022-03-25T21:37:38.214Z'
+    - styled-components > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-03-25T21:37:38.214Z'
+    - styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash:
+        patched: '2022-03-25T21:37:38.214Z'
+    - styled-components > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2022-03-25T21:37:38.214Z'
+    - react-select > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2022-03-25T21:37:38.214Z'
+    - styled-components > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2022-03-25T21:37:38.214Z'
+    - react-select > @emotion/core > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2022-03-25T21:37:38.214Z'
