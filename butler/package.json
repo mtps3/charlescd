@@ -20,13 +20,13 @@
     "test:all:cov": "jest --runInBand --coverage --forceExit"
   },
   "dependencies": {
-    "@nestjs/common": "^7.6.5",
+    "@nestjs/common": "^9.0.0",
     "@nestjs/config": "^0.4.2",
     "@nestjs/core": "^7.4.2",
     "@nestjs/platform-express": "^7.4.2",
     "@nestjs/swagger": "^4.7.9",
     "@nestjs/typeorm": "^7.1.0",
-    "@octokit/rest": "^16.43.1",
+    "@octokit/rest": "^17.0.0",
     "@types/stack-trace": "0.0.29",
     "class-transformer": "^0.3.1",
     "class-validator": "^0.11.1",
@@ -38,15 +38,15 @@
     "morgan": "^1.10.0",
     "mustache": "^3.2.1",
     "pg": "^7.18.2",
-    "pg-boss": "^5.0.1",
+    "pg-boss": "^5.1.0",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
     "rxjs": "^6.5.5",
     "stack-trace": "0.0.10",
     "swagger-ui-express": "^4.1.4",
-    "typeorm": "^0.2.25",
+    "typeorm": "^0.3.12",
     "uuid": "8.3.0",
-    "winston": "^3.2.1"
+    "winston": "^3.3.4"
   },
   "devDependencies": {
     "@babel/types": "7.5.5",
