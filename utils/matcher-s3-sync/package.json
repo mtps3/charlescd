@@ -19,7 +19,7 @@
     "axios": "^0.21.1",
     "csv-parser": "^2.3.3",
     "express": "^4.17.1",
-    "form-data": "^3.0.0",
+    "form-data": "^3.0.4",
     "mock-aws-s3": "^4.0.1",
     "nodemon": "^2.0.4",
     "rimraf": "^3.0.2",
