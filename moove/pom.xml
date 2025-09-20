@@ -51,7 +51,7 @@
         <keycloak.admin.client.version>7.0.1</keycloak.admin.client.version>
         <cglib.nodep.version>3.3.0</cglib.nodep.version>
         <hibernate.types.version>2.5.0</hibernate.types.version>
-        <spring.jdbc.version>5.2.4.RELEASE</spring.jdbc.version>
+        <spring.jdbc.version>6.2.11</spring.jdbc.version>
         <bucket4j-core.version>4.10.0</bucket4j-core.version>
         <liquibase.core.version>3.8.7</liquibase.core.version>
         <spock.core.version>1.0-groovy-2.4</spock.core.version>
@@ -335,8 +335,7 @@
                         <phase>none</phase>
                         <configuration>
                             <target name="ktlint">
-                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true"
-                                      classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
+                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
                                     <arg value="src/**/*.kt"/>
                                 </java>
                             </target>
@@ -347,8 +346,7 @@
                         <phase>none</phase>
                         <configuration>
                             <target name="ktlint">
-                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true"
-                                      classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
+                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
                                     <arg value="-F"/>
                                     <arg value="src/**/*.kt"/>
                                 </java>
